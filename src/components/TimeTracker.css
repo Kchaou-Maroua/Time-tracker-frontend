@@ -1,0 +1,120 @@
+/* Style du bouton de démarrage */
+.start-button {
+    background-color: rgb(247, 247, 247);
+    /* Vert lorsque le chronomètre est en cours d'exécution */
+    color: rgb(71, 190, 38);
+    margin: 10px;
+    min-width: 150px;
+    /* Largeur minimale des boutons, ajustez selon vos besoins */
+    padding: 10px 20px;
+    width: auto;
+    right: auto;
+}
+
+/* Style du bouton d'arrêt */
+.stop-button {
+    background-color: rgb(237, 234, 234);
+    /* Rouge lorsque le chronomètre est arrêté */
+    color: rgb(199, 14, 29);
+    margin: 10px;
+    padding: 10px 20px;
+    min-width: 150px;
+    /* Largeur minimale des boutons, ajustez selon vos besoins */
+
+}
+
+/* Style de l'icône carré rouge pour le bouton d'arrêt */
+.stop-icon::before {
+    content: "\25A0";
+    /* Code Unicode pour un carré */
+    margin-right: 10px;
+    /* Espacement entre l'icône et le texte du bouton */
+}
+
+/* Ajoutez des styles pour mettre en page les boutons à droite */
+.style-container {
+    text-align: right;
+    /* Aligner les boutons à droite */
+    padding: 10px 20px;
+    /* Espacement par rapport au paragraphe */
+}
+
+/*Ajoutez des styles pour mettre en page les titer*/
+.style-title {
+    color: rgb(30, 30, 90);
+    font-weight: bold;
+    justify-content:right;
+        /* Espacement entre les éléments */
+
+}
+
+/* Ajoutez un fond blanc à toute la page en ciblant le sélecteur body */
+.body-style {
+    background-color: white;
+}
+
+.start-icon {
+    /* Styles pour l'icône verte du bouton Start */
+    color: green;
+    /* Couleur verte */
+    margin-right: 5px;
+    /* Espacement à droite de l'icône */
+}
+
+/* Ajoutez une classe pour le texte vert */
+.chro-style {
+    color: green;
+    padding-right: 30px;
+    justify-content: flex-end;
+        /* Espacement entre les éléments */
+        font-weight: bold;
+    
+}
+.bold-hours,
+.bold-minutes {
+    font-weight: bold;
+
+}
+
+/* Désactivez le changement de couleur au clic */
+button:active {
+    background-color: inherit !important;
+    color: inherit !important;
+}
+
+.ligne-style {
+    display: flex;
+    align-items: center;
+    /* Aligner les éléments verticalement au centre */
+    justify-content: space-between;
+    /* Espacement entre les éléments */
+}
+
+/* Styles spécifiques pour les éléments à l'intérieur du conteneur en ligne */
+.ligne-style h1 {
+    margin-right: 20px;
+    /* Espacement entre le texte et les boutons/chronomètre */
+}
+
+
+.left-section {
+
+    flex-direction: column;
+    /* Aligner les boutons et le chronomètre en colonne */
+}
+
+.right-section {
+    /* Ajustez les styles pour le titre h1 à droite selon vos besoins */
+    text-align: right;
+    margin-right: 20px;
+    /* Espace entre le titre et les éléments à gauche */
+}
+
+.green-line {
+    height: 1px;
+    /* Hauteur de la ligne */
+    background-color: green;
+    /* Couleur verte */
+    width: 250%;
+    /* Largeur de la ligne (100% de la largeur parente) */
+}
