@@ -23,7 +23,7 @@
     
         <!-- Ligne verte -->
         <div class="green-line"></div>
-        
+        <div> <p>  Period 3 Started 4:00 pm </p></div>
          
       </div>
     </div>
@@ -38,6 +38,7 @@ export default {
             isRunning: false,
             startTime: null as Date | null, // Type Date ou null
             endTime: null as Date | null, // Type Date ou null
+            chronomètresEnregistres: [] as { startTime: Date | null, endTime: Date | null }[], // Spécifiez le type du tableau , 
         };
     },
     computed: {
@@ -68,6 +69,18 @@ export default {
             if (this.isRunning) {
                 this.endTime = new Date();
                 this.isRunning = false;
+             // Créez un nouvel objet de chronomètre enregistré
+                const chronometreEnregistre = {
+                    startTime: this.startTime,
+                    endTime: this.endTime,
+                };
+
+                // Ajoutez le chronomètre enregistré à la liste
+                this.chronomètresEnregistres.push(chronometreEnregistre);
+
+                // Réinitialisez le chronomètre actuel
+                this.startTime = null;
+                this.endTime = null;   
             }
         },
         updateTime() {

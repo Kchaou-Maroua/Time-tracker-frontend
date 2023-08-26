@@ -2,6 +2,7 @@
   "recommendations": [
     "vue.volar",
     "vue.vscode-typescript-vue-plugin",
-    "msjsdiag.debugger-for-chrome-nightly"
+    "msjsdiag.debugger-for-chrome-nightly",
+    "msjsdiag.debugger-for-chrome"
   ]
 }

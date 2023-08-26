@@ -41,10 +41,21 @@
 
 /*Ajoutez des styles pour mettre en page les titer*/
 .style-title {
-    color: rgb(30, 30, 90);
-    font-weight: bold;
-    justify-content:right;
-        /* Espacement entre les éléments */
+    
+
+    
+    width: 183px;
+    height: 35px;
+    left: 273px;
+    top: 165px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 35px;
+
+    color: #415C73;
 
 }
 
@@ -66,10 +77,11 @@
     color: green;
     padding-right: 30px;
     justify-content: flex-end;
-        /* Espacement entre les éléments */
-        font-weight: bold;
-    
+    /* Espacement entre les éléments */
+    font-weight: bold;
+
 }
+
 .bold-hours,
 .bold-minutes {
     font-weight: bold;
