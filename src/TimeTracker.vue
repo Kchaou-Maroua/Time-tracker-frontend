@@ -51,7 +51,7 @@ export default {
             endTime: null as Date | null, // Type Date ou null
             chronomètresEnregistres: [] as { startTime: Date | null, endTime: Date | null }[],
             // Spécifiez le type du tableau 
-            backendData: null,
+            DataBase: null,
         };
     },
     computed: {
