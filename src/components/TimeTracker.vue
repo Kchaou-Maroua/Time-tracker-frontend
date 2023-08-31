@@ -1,4 +1,4 @@
-<template class="body-style">
+/* <template class="body-style">
     <div>
        
         <div class="ligne-style">
@@ -100,3 +100,4 @@ export default {
 /* Vos styles CSS existants */
 /* ... */
 </style>
+*/
